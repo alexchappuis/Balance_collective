@@ -1,0 +1,218 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-mark">
+      {% include 'main/_logo_mark.html' %}
+    </div>
+    <h1 class="hero-title">Balance Collective</h1>
+    <p class="hero-tag">Wellness, simplified.</p>
+    <p class="hero-sub">
+      Wellness experiences for companies that meet people where they are —
+      approachable, sustainable, and built around real, busy lives.
+    </p>
+    <a href="#contact" class="btn btn-light">Work With Us</a>
+  </div>
+  <div class="hero-scroll" aria-hidden="true"><span></span></div>
+</section>
+
+<!-- MISSION -->
+<section id="mission" class="section section-cream">
+  <div class="container narrow center">
+    <p class="eyebrow">Our Mission</p>
+    <h2 class="section-title">Wellness, simplified.</h2>
+    <p class="lede">
+      Real wellness isn't complicated. We've just been pulled toward extremes
+      and quick fixes, and away from what's simple and built to last. Balance
+      Collective brings teams back to the basics — movement, nourishment, rest,
+      and connection — in a form that fits the way they actually work.
+    </p>
+  </div>
+</section>
+
+<!-- WHAT WE OFFER -->
+<section id="offerings" class="section section-soft">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">What We Offer</p>
+      <h2 class="section-title">Experiences designed around your people.</h2>
+      <p class="lede">
+        No two teams are the same, so no two programs should be either. We
+        start with a short anonymous survey to understand where your team is
+        and what they actually need — then design curated experiences around
+        them.
+      </p>
+    </div>
+
+    <ul class="pillars" aria-label="Pillars of health">
+      <li>Movement</li>
+      <li>Nutrition</li>
+      <li>Mindfulness</li>
+      <li>Creativity</li>
+      <li>Sleep</li>
+      <li>Community</li>
+    </ul>
+
+    <div class="offer-grid">
+      <article class="offer-card">
+        <h3>Movement &amp; Stretch</h3>
+        <p>Energizing breaks that get teams out of their chairs and back into their bodies.</p>
+      </article>
+      <article class="offer-card">
+        <h3>Mindfulness &amp; Reflection</h3>
+        <p>Grounding exercises, breathwork, and journaling for a calmer, clearer team.</p>
+      </article>
+      <article class="offer-card">
+        <h3>The Creative Reset</h3>
+        <p>A creative experience to unwind, reconnect, and reset.</p>
+      </article>
+      <article class="offer-card">
+        <h3>Workshops &amp; Lunch Sessions</h3>
+        <p>Educational sessions on nutrition, sleep, and the habits that quietly compound.</p>
+      </article>
+      <article class="offer-card">
+        <h3>Team Experiences &amp; Retreats</h3>
+        <p>Immersive half- or full-day experiences nourishing a different pillar of health.</p>
+      </article>
+      <article class="offer-card offer-card-quiet">
+        <p class="offer-quiet-text">Designed around your people — not a one-size-fits-all program.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT / STORY -->
+<section id="about" class="section section-cream">
+  <div class="container about-grid">
+    <div class="about-image">
+      <img src="{% static 'main/images/headshot.png' %}"
+           alt="Isa, founder of Balance Collective"
+           class="about-photo">
+    </div>
+    <div class="about-copy">
+      <p class="eyebrow">About</p>
+      <h2 class="section-title">Hi, I'm Isa.</h2>
+      <p>
+        I'm an NBHWC board-certified health and wellness coach and the founder
+        of Balance Collective. I studied psychology at Northeastern University
+        and grew up in a Puerto Rican household where food, family, and taking
+        care of each other were central to everything. Those roots have shaped
+        everything I believe about wellness.
+      </p>
+      <p>
+        I grew up in a home where wellness was simply part of life. At one
+        point, I drifted from those roots — my energy dropped, my mind felt
+        overwhelmed, and I found myself doing movement I didn't enjoy with a
+        complicated relationship to my health. Going back to the basics
+        changed everything.
+      </p>
+      <p>
+        I created Balance Collective because I believe real wellness isn't
+        complicated. We've just been pulled toward extremes and quick fixes,
+        and away from what's simple and built to last.
+      </p>
+      <p class="about-sign">— Isa, Founder of Balance Collective</p>
+    </div>
+  </div>
+</section>
+
+<!-- COMMUNITY / CLUB BALANCE -->
+<section id="community" class="section section-soft">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Community</p>
+      <h2 class="section-title">Club Balance.</h2>
+      <p class="lede">
+        Real moments, real connection, real wellness. Club Balance is an
+        in-person community in Houston where people come together, feel safe,
+        and actually enjoy taking care of themselves — whether that means
+        making a new friend, getting creative, moving in a way that feels good,
+        or simply being in a room with other people.
+      </p>
+    </div>
+
+    <div class="gallery-carousel" aria-roledescription="carousel" aria-label="Club Balance event photos">
+      <button class="carousel-arrow carousel-prev" aria-label="Previous photo" type="button">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg>
+      </button>
+      <div class="carousel-track">
+        {# Swap each <div class="carousel-placeholder"> for an <img> once Isa sends photos: #}
+        {# <img src="{% static 'main/images/club/club-1.jpg' %}" alt="Club Balance event"> #}
+        <div class="carousel-slide"><div class="carousel-placeholder"><span>Event photo 1</span></div></div>
+        <div class="carousel-slide"><div class="carousel-placeholder"><span>Event photo 2</span></div></div>
+        <div class="carousel-slide"><div class="carousel-placeholder"><span>Event photo 3</span></div></div>
+        <div class="carousel-slide"><div class="carousel-placeholder"><span>Event photo 4</span></div></div>
+        <div class="carousel-slide"><div class="carousel-placeholder"><span>Event photo 5</span></div></div>
+      </div>
+      <button class="carousel-arrow carousel-next" aria-label="Next photo" type="button">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+      </button>
+      <div class="carousel-dots" aria-label="Photo selection">
+        <button class="carousel-dot is-active" type="button" aria-label="Go to photo 1"></button>
+        <button class="carousel-dot" type="button" aria-label="Go to photo 2"></button>
+        <button class="carousel-dot" type="button" aria-label="Go to photo 3"></button>
+        <button class="carousel-dot" type="button" aria-label="Go to photo 4"></button>
+        <button class="carousel-dot" type="button" aria-label="Go to photo 5"></button>
+      </div>
+    </div>
+
+    <p class="community-coda">
+      Every Club Balance event is designed around a different pillar of health
+      — movement, mindfulness, creativity, nutrition, sleep, and community —
+      because wellness is so much more than just working out and eating well.
+    </p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section section-sage">
+  <div class="container narrow">
+    <div class="section-head center">
+      <p class="eyebrow eyebrow-light">Let's connect</p>
+      <h2 class="section-title section-title-light">Ready to bring Balance Collective to your team?</h2>
+      <p class="lede lede-light">
+        Whether you're looking for a one-time experience or a full wellness
+        program, we'd love to learn more about what your team needs.
+      </p>
+    </div>
+
+    <form class="contact-form" method="post" action="{% url 'contact_submit' %}" novalidate>
+      {% csrf_token %}
+
+      {# honeypot — hidden from users, hopefully not from bots #}
+      <div class="hp">{{ form.website }}</div>
+
+      <div class="field">
+        <label for="id_name">Name</label>
+        {{ form.name }}
+        {% if form.name.errors %}<p class="field-error">{{ form.name.errors|join:" " }}</p>{% endif %}
+      </div>
+
+      <div class="field">
+        <label for="id_email">Email</label>
+        {{ form.email }}
+        {% if form.email.errors %}<p class="field-error">{{ form.email.errors|join:" " }}</p>{% endif %}
+      </div>
+
+      <div class="field">
+        <label for="id_company">Company</label>
+        {{ form.company }}
+        {% if form.company.errors %}<p class="field-error">{{ form.company.errors|join:" " }}</p>{% endif %}
+      </div>
+
+      <div class="field">
+        <label for="id_message">Message <span class="optional">(optional)</span></label>
+        {{ form.message }}
+        {% if form.message.errors %}<p class="field-error">{{ form.message.errors|join:" " }}</p>{% endif %}
+      </div>
+
+      <button type="submit" class="btn btn-cream">Send</button>
+    </form>
+  </div>
+</section>
+
+{% endblock %}

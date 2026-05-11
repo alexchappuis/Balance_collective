@@ -1,0 +1,78 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}Balance Collective — Wellness, Simplified.{% endblock %}</title>
+  <meta name="description" content="Balance Collective creates wellness experiences for companies that meet people where they are — approachable, sustainable, and built around real, busy lives.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Balance Collective — Wellness, Simplified.">
+  <meta property="og:description" content="Wellness experiences designed around your people, not a one-size-fits-all program.">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="{% static 'main/css/styles.css' %}">
+</head>
+<body>
+
+  <header class="site-header" id="site-header">
+    <div class="container nav-row">
+      <a href="#top" class="brand">
+        <img src="{% static 'main/images/balance_collective_logo.svg' %}"
+             alt="Balance Collective" class="brand-logo">
+        <span class="brand-name">Balance Collective</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#mission">Mission</a>
+        <a href="#offerings">What We Offer</a>
+        <a href="#about">About</a>
+        <a href="#community">Community</a>
+        <a href="#contact" class="nav-cta">Work With Us</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  {% if messages %}
+    <div class="flash-stack" role="status" aria-live="polite">
+      {% for message in messages %}
+        <div class="flash flash-{{ message.tags }}">{{ message }}</div>
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  <main id="top">
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="footer-mark">
+          {% include 'main/_logo_mark.html' %}
+        </div>
+        <p class="footer-name">Balance Collective</p>
+        <p class="footer-tag">Wellness, simplified.</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://instagram.com/balancedbyisa" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://tiktok.com/@balancedbyisa" target="_blank" rel="noopener">TikTok</a>
+        <a href="mailto:isa@balancecollective.co">isa@balancecollective.co</a>
+      </div>
+      <div class="footer-meta">
+        <p>&copy; {% now "Y" %} Balance Collective</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="{% static 'main/js/main.js' %}"></script>
+</body>
+</html>
