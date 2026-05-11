@@ -1,2 +1,1 @@
-release: python manage.py migrate --noinput && python manage.py collectstatic --noinput
-web: gunicorn balance_collective.wsgi --log-file -git add Procfile
+web: python manage.py migrate --noinput && python manage.py collectstatic --noinput && gunicorn balance_collective.wsgi --log-file -
