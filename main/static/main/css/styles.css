@@ -422,12 +422,17 @@ p { margin: 0 0 1em; }
   aspect-ratio: 3 / 2;
   overflow: hidden;
   background: var(--cream-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .carousel-slide img {
-  width: 100%;
-  height: 100%;
+  width: 75%;
+  height: 75%;
   object-fit: cover;
   display: block;
+
+  
 }
 .carousel-placeholder {
   width: 100%;
