@@ -7,7 +7,7 @@ from decouple import config
 
 from .forms import ContactForm
 
-resend.api_key = config('re_Vmkye5QR_3aMrLd8S3um9bPX45iBQq6Zn')
+resend.api_key = config('re_Vmkye5QR_3aMrLd8S3um9bPX45iBQq6Zn', default='')
 
 
 class HomeView(TemplateView):
