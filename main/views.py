@@ -33,7 +33,7 @@ def contact_submit(request):
 
     try:
         resend.Emails.send({
-            "from": "Balance Collective <isa@balancecollective.co>",
+            "from": "Balance Collective <onboarding@resend.dev>",
             "to": ["isa@balancecollective.co"],
             "subject": f"New Balance Collective inquiry — {submission.name}",
             "text": (
