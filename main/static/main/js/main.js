@@ -40,6 +40,17 @@
   document.querySelectorAll('.gallery-carousel').forEach((root) => {
     const track = root.querySelector('.carousel-track');
     const slides = root.querySelectorAll('.carousel-slide');
+    const dotWrap = root.querySelector('.carousel-dots');
+    // Build one dot per slide so the count can never drift from the photos
+    if (dotWrap && !dotWrap.children.length) {
+      slides.forEach((_, i) => {
+        const b = document.createElement('button');
+        b.type = 'button';
+        b.className = 'carousel-dot' + (i === 0 ? ' is-active' : '');
+        b.setAttribute('aria-label', 'Go to photo ' + (i + 1));
+        dotWrap.appendChild(b);
+      });
+    }
     const dots = root.querySelectorAll('.carousel-dot');
     const prev = root.querySelector('.carousel-prev');
     const next = root.querySelector('.carousel-next');

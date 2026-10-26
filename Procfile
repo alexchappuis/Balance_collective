@@ -1,1 +1,1 @@
-web: python manage.py migrate && python manage.py createsuperuser --noinput || true && gunicorn balance_collective.wsgi
+web: python manage.py migrate && python manage.py collectstatic --noinput && (python manage.py createsuperuser --noinput || true) && gunicorn balance_collective.wsgi

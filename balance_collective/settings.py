@@ -100,7 +100,15 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+# Django 5.1 removed STATICFILES_STORAGE, so the old setting was silently ignored
+# (no hashed filenames -> browsers kept serving stale images). STORAGES is the
+# current way to turn on WhiteNoise's hashed + compressed files.
+STORAGES = {
+    'default': {'BACKEND': 'django.core.files.storage.FileSystemStorage'},
+    'staticfiles': {'BACKEND': 'whitenoise.storage.CompressedManifestStaticFilesStorage'},
+}
+# If a template references a file that doesn't exist, fall back instead of 500ing.
+WHITENOISE_MANIFEST_STRICT = False
 
 # --- Email (Gmail SMTP) -----------------------------------------------------
 

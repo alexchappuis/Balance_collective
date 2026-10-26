@@ -13,7 +13,7 @@
     <p class="hero-tag">Wellness, simplified.</p>
     <p class="hero-sub">
       Wellness experiences for companies that meet people where they are —
-      approachable, sustainable, and built around real, busy lives.
+      approachable, sustainable, and built to last.
     </p>
     <a href="#contact" class="btn btn-light">Work With Us</a>
   </div>
@@ -39,55 +39,106 @@
       <p class="eyebrow">What We Offer</p>
       <h2 class="section-title">Experiences designed around your people.</h2>
       <p class="lede">
-        No two teams are the same, so no two programs should be either. We
-        start with a short anonymous survey to understand where your team is
-        and what they actually need — then design curated experiences around
-        them.
+        Every program starts with a short anonymous survey. We design curated
+        experiences based on what your team actually needs — not a
+        one-size-fits-all program.
       </p>
     </div>
 
     <ul class="pillars" aria-label="Pillars of health">
       <li>Movement</li>
       <li>Nutrition</li>
-      <li>Mindfulness</li>
+      <li>Mental Health</li>
       <li>Creativity</li>
       <li>Sleep</li>
       <li>Community</li>
+      <li>Purpose</li>
+      <li>Nature</li>
     </ul>
 
     <div class="offer-grid">
       <article class="offer-card">
+        <p class="card-tag">Movement</p>
         <h3>Movement &amp; Stretch</h3>
         <p>Energizing breaks that get teams out of their chairs and back into their bodies.</p>
       </article>
       <article class="offer-card">
+        <p class="card-tag">Mental Health</p>
         <h3>Mindfulness &amp; Reflection</h3>
         <p>Grounding exercises, breathwork, and journaling for a calmer, clearer team.</p>
       </article>
       <article class="offer-card">
+        <p class="card-tag">Creativity</p>
         <h3>The Creative Reset</h3>
-        <p>A creative experience to unwind, reconnect, and reset.</p>
+        <p>A creative painting experience to unwind, reconnect, and reset — no experience needed.</p>
       </article>
       <article class="offer-card">
-        <h3>Workshops &amp; Lunch Sessions</h3>
-        <p>Educational sessions on nutrition, sleep, and the habits that quietly compound.</p>
+        <p class="card-tag">Nutrition</p>
+        <h3>Nourishment Workshop</h3>
+        <p>Hands-on grocery and meal prep sessions that make healthy eating actually feel doable.</p>
       </article>
       <article class="offer-card">
-        <h3>Team Experiences &amp; Retreats</h3>
-        <p>Immersive half- or full-day experiences nourishing a different pillar of health.</p>
+        <p class="card-tag">All 8 Pillars</p>
+        <h3>Wellness Wheel Session</h3>
+        <p>A guided reflection across all 8 pillars — helping teams understand where they are and what they actually need.</p>
       </article>
-      <article class="offer-card offer-card-quiet">
-        <p class="offer-quiet-text">Every experience is tailored to your team, not a one-size-fits-all program.</p>
+      <article class="offer-card">
+        <p class="card-tag">Education</p>
+        <h3>Lunch &amp; Learns</h3>
+        <p>Conversations on the habits that quietly compound — sleep, nutrition, stress, and recovery.</p>
       </article>
     </div>
   </div>
 </section>
 
+<!-- PACKAGES -->
+<section id="packages" class="section section-cream">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Our Packages</p>
+      <h2 class="section-title">Meet your team where they are.</h2>
+      <p class="lede">
+        Whether you're starting with a single experience or building a
+        year-long program, there's a format that fits.
+      </p>
+    </div>
+
+    <div class="package-grid">
+      <article class="package-card">
+        <p class="package-num">01</p>
+        <h3>Single Experience</h3>
+        <p>One curated session — a great way to introduce your team to a new pillar of wellness.</p>
+      </article>
+      <article class="package-card">
+        <p class="package-num">02</p>
+        <h3>Wellness Week</h3>
+        <p>Five days, five experiences. A curated set of 2–3 experiences across a week, built around a pillar of health your team needs most.</p>
+      </article>
+      <article class="package-card">
+        <p class="package-num">03</p>
+        <h3>Wellness Month</h3>
+        <p>A full month of programming across multiple pillars — with time to explore, reflect, and implement.</p>
+      </article>
+      <article class="package-card">
+        <p class="package-num">04</p>
+        <h3>Annual Program</h3>
+        <p>A full year of wellness built into the everyday — consistent, approachable, and designed to be something your team actually looks forward to.</p>
+      </article>
+    </div>
+
+    <p class="package-note">
+      <strong>Every program includes 1:1 and group coaching</strong> — ongoing
+      support and regular touchpoints to keep wellness top of mind and help
+      your team build habits that actually stick.
+    </p>
+  </div>
+</section>
+
 <!-- ABOUT / STORY -->
-<section id="about" class="section section-cream">
+<section id="about" class="section section-soft">
   <div class="container about-grid">
     <div class="about-image">
-      <img src="{% static 'main/images/headshot.png' %}"
+      <img src="{% static 'main/images/headshot.jpg' %}"
            alt="Isa, founder of Balance Collective"
            class="about-photo">
     </div>
@@ -109,7 +160,7 @@
 </section>
 
 <!-- COMMUNITY / CLUB BALANCE -->
-<section id="community" class="section section-soft">
+<section id="community" class="section section-cream">
   <div class="container">
     <div class="section-head">
       <p class="eyebrow">Community</p>
@@ -128,45 +179,34 @@
     <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg>
   </button>
   <div class="carousel-track">
-    <div class="carousel-slide"><img src="{% static 'main/images/club/event3.jpeg' %}" alt="Club Balance event"></div>
-    <div class="carousel-slide"><img src="{% static 'main/images/club/event1.jpeg' %}" alt="Club Balance event"></div>
-    <div class="carousel-slide"><img src="{% static 'main/images/club/event2.jpeg' %}" alt="Club Balance event"></div>
-    <div class="carousel-slide"><img src="{% static 'main/images/club/event4.jpeg' %}" alt="Club Balance event"></div>
-    <div class="carousel-slide"><img src="{% static 'main/images/club/event5.jpeg' %}" alt="Club Balance event"></div>
-    <div class="carousel-slide"><img src="{% static 'main/images/club/event6.jpeg' %}" alt="Club Balance event"></div>
-    <div class="carousel-slide"><img src="{% static 'main/images/club/IMG_4939.jpeg' %}" alt="Club Balance event"></div>
-    <div class="carousel-slide"><img src="{% static 'main/images/club/IMG_4947.jpeg' %}" alt="Club Balance event"></div>
-    <div class="carousel-slide"><img src="{% static 'main/images/club/IMG_4952.jpeg' %}" alt="Club Balance event"></div>
-    <div class="carousel-slide"><img src="{% static 'main/images/club/IMG_5530.jpeg' %}" alt="Club Balance event"></div>
-    <div class="carousel-slide"><img src="{% static 'main/images/club/IMG_7154.jpeg' %}" alt="Club Balance event"></div>
-    <div class="carousel-slide"><img src="{% static 'main/images/club/IMG_7160.jpeg' %}" alt="Club Balance event"></div>
+    <div class="carousel-slide"><img src="{% static 'main/images/club/event7.jpeg' %}" alt="Club Balance event" loading="lazy"></div>
+    <div class="carousel-slide"><img src="{% static 'main/images/club/event8.jpeg' %}" alt="Club Balance event" loading="lazy"></div>
+    <div class="carousel-slide"><img src="{% static 'main/images/club/event9.jpeg' %}" alt="Club Balance event" loading="lazy"></div>
+    <div class="carousel-slide"><img src="{% static 'main/images/club/event10.jpeg' %}" alt="Club Balance event" loading="lazy"></div>
+    <div class="carousel-slide"><img src="{% static 'main/images/club/event11.jpeg' %}" alt="Club Balance event" loading="lazy"></div>
+    <div class="carousel-slide"><img src="{% static 'main/images/club/event3.jpeg' %}" alt="Club Balance event" loading="lazy"></div>
+    <div class="carousel-slide"><img src="{% static 'main/images/club/event1.jpeg' %}" alt="Club Balance event" loading="lazy"></div>
+    <div class="carousel-slide"><img src="{% static 'main/images/club/event2.jpeg' %}" alt="Club Balance event" loading="lazy"></div>
+    <div class="carousel-slide"><img src="{% static 'main/images/club/event4.jpeg' %}" alt="Club Balance event" loading="lazy"></div>
+    <div class="carousel-slide"><img src="{% static 'main/images/club/event5.jpeg' %}" alt="Club Balance event" loading="lazy"></div>
+    <div class="carousel-slide"><img src="{% static 'main/images/club/event6.jpeg' %}" alt="Club Balance event" loading="lazy"></div>
+    <div class="carousel-slide"><img src="{% static 'main/images/club/IMG_4939.jpeg' %}" alt="Club Balance event" loading="lazy"></div>
+    <div class="carousel-slide"><img src="{% static 'main/images/club/IMG_4947.jpeg' %}" alt="Club Balance event" loading="lazy"></div>
+    <div class="carousel-slide"><img src="{% static 'main/images/club/IMG_4952.jpeg' %}" alt="Club Balance event" loading="lazy"></div>
+    <div class="carousel-slide"><img src="{% static 'main/images/club/IMG_5530.jpeg' %}" alt="Club Balance event" loading="lazy"></div>
+    <div class="carousel-slide"><img src="{% static 'main/images/club/IMG_7154.jpeg' %}" alt="Club Balance event" loading="lazy"></div>
+    <div class="carousel-slide"><img src="{% static 'main/images/club/IMG_7160.jpeg' %}" alt="Club Balance event" loading="lazy"></div>
   </div>
   <button class="carousel-arrow carousel-next" aria-label="Next photo" type="button">
     <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
   </button>
-  <div class="carousel-dots" aria-label="Photo selection">
-    <button class="carousel-dot is-active" type="button" aria-label="Go to photo 1"></button>
-    <button class="carousel-dot" type="button" aria-label="Go to photo 2"></button>
-    <button class="carousel-dot" type="button" aria-label="Go to photo 3"></button>
-    <button class="carousel-dot" type="button" aria-label="Go to photo 4"></button>
-    <button class="carousel-dot" type="button" aria-label="Go to photo 5"></button>
-    <button class="carousel-dot" type="button" aria-label="Go to photo 6"></button>
-    <button class="carousel-dot" type="button" aria-label="Go to photo 7"></button>
-    <button class="carousel-dot" type="button" aria-label="Go to photo 8"></button>
-    <button class="carousel-dot" type="button" aria-label="Go to photo 9"></button>
-    <button class="carousel-dot" type="button" aria-label="Go to photo 10"></button>
-    <button class="carousel-dot" type="button" aria-label="Go to photo 11"></button>
-    <button class="carousel-dot" type="button" aria-label="Go to photo 12"></button>
-    <button class="carousel-dot" type="button" aria-label="Go to photo 13"></button>
-    <button class="carousel-dot" type="button" aria-label="Go to photo 14"></button>
-    <button class="carousel-dot" type="button" aria-label="Go to photo 15"></button>
-  </div>
+  <div class="carousel-dots" aria-label="Photo selection"></div>
 </div>
 
     <p class="community-coda">
       Every Club Balance event is designed around a different pillar of health
-      — movement, mindfulness, creativity, nutrition, sleep, and community —
-      because wellness is so much more than just working out and eating well.
+      — movement, nutrition, mental health, creativity, sleep, community,
+      purpose, and nature — because wellness is so much more than just working out and eating well.
     </p>
   </div>
 </section>
